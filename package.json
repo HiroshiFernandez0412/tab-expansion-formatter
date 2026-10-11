@@ -1,6 +1,6 @@
 {
   "name": "tab-expansion-formatter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Expands and contracts tabs to spaces with configurable tab width and column-aware positioning.",
   "type": "module",
   "main": "src/index.js",
