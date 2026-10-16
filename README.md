@@ -41,3 +41,10 @@ that is stable.
 
 The formatter treats every character as width 1. It does not implement Unicode
 East Asian Width or grapheme clustering; standard library only.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
